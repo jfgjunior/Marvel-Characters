@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E62429</color>
+    <color name="colorPrimaryTransparent">#90E62429</color>
+    <color name="colorPrimaryDark">#AB0000</color>
+    <color name="colorAccent">#2A7AFF</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="loadingOverlayColor">#CC000000</color>
+    <color name="goldenYellow">#FFDF00</color>
+    <color name="goldenYellowDark">#996515</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Marvel Characters</string>
+    <string name="comic_price_button">Check highest comic price</string>
+    <string name="description_fallback">No description provided</string>
+    <string name="name_fallback">No name provided</string>
+    <string name="comic_price">Price: $%1$.2f</string>
+    <string name="tile_aspect_ratio">H, 3:4</string>
+    <string name="try_again">Try again in a few moments</string>
+    <string name="error_title">An error occurred</string>
+    <string name="loading_message">Checking prices.\nIt can take a while.</string>
+    <string name="error_loading_characters">Couldn\'t load more characters</string>
+    <string name="price_fallback">0</string>
+</resources>

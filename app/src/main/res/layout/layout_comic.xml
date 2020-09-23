@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/comicImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/female_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comicName"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/comicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/primaryText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/comicImage"
+        app:layout_constraintStart_toStartOf="@id/comicImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Comic Name" />
+
+    <TextView
+        android:id="@+id/comicDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/secondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comicImage"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi culpa inventore, neque placeat sunt suscipit voluptatibus. Aperiam autem consequatur culpa dolore, dolorum ducimus eligendi est fuga impedit itaque iure labore laudantium minus nemo nesciunt nisi nobis, nostrum nulla omnis placeat porro qui quis repellat repellendus reprehenderit rerum similique veritatis." />
+
+    <TextView
+        android:id="@+id/comicPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:padding="16sp"
+        android:background="@drawable/shape_pricce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comicDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Price: $2000"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/female_placeholder"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterImage"
+        tools:text="Superhero Name" />
+
+    <TextView
+        android:id="@+id/characterDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/secondaryText"
+        app:layout_constraintEnd_toEndOf="@id/characterImage"
+        app:layout_constraintStart_toStartOf="@id/characterImage"
+        app:layout_constraintTop_toBottomOf="@+id/characterName"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi culpa inventore, neque placeat sunt suscipit voluptatibus. Aperiam autem consequatur culpa dolore, dolorum ducimus eligendi est fuga impedit itaque iure labore laudantium minus nemo nesciunt nisi nobis, nostrum nulla omnis placeat porro qui quis repellat repellendus reprehenderit rerum similique veritatis." />
+
+    <Button
+        android:id="@+id/comicPriceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/comic_price_button"
+        android:textColor="@color/goldenYellowDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
